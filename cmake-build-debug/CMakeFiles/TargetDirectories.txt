@@ -1,0 +1,3 @@
+/Users/mestan/CLionProjects/CmpE230/hw1/cmake-build-debug/CMakeFiles/hw1.dir
+/Users/mestan/CLionProjects/CmpE230/hw1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/mestan/CLionProjects/CmpE230/hw1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
