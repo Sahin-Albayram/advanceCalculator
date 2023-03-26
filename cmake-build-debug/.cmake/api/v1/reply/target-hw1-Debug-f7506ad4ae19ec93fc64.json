@@ -93,7 +93,9 @@
 			"sourceIndexes" : 
 			[
 				1,
-				2
+				2,
+				3,
+				4
 			]
 		}
 	],
@@ -113,6 +115,16 @@
 		{
 			"backtrace" : 1,
 			"path" : "parser.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "structs.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "struct.h",
 			"sourceGroupIndex" : 1
 		}
 	],
