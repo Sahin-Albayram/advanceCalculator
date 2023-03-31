@@ -1,8 +1,10 @@
 //
 // Created by mestan on 25.03.2023.
 //
-
+#ifndef HW1_STRUCTS_H
+#define HW1_STRUCTS_H
 #include "parser.h"
+
 
 #define EXPRESSION 0
 #define TERM 1
@@ -19,18 +21,50 @@
 #define OPOR 3
 #define OPXOR 4
 
-
-
-
+typedef struct token {
+    int type;
+    int value;
+} ;
 
 typedef struct element{
     int type;
-    struct element *elements[256];
+    struct token tokens[MAX];
     int opr;
+    int value;
 };
 
+
+
+typedef struct logic{
+    struct element elements[MAX];
+    int opr;
+    struct logic *l1;
+    struct logic *l2;
+};
+typedef struct expression{
+    struct element elements[MAX];
+    int opr;
+    struct logic *l1;
+    struct logic *l2;
+};
+typedef struct term{
+    struct element elements[MAX];
+    int opr;
+    struct logic *l1;
+    struct logic *l2;
+};
+typedef struct factor{
+    struct element el;
+    int type;
+    double value;
+    struct logic *l;
+};
+
+
+
+
+
 // element : type = 0 , elements = [element1, element2],
-#ifndef HW1_STRUCTS_H
-#define HW1_STRUCTS_H
+
 
 #endif //HW1_STRUCTS_H

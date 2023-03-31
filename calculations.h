@@ -1,6 +1,8 @@
 //
 // Created by mestan on 15.03.2023.
 //
+#ifndef HW1_CALCULATIONS_H
+#define HW1_CALCULATIONS_H
 
 int add ( int a ,int b){
     return a+b;
@@ -39,7 +41,6 @@ int bit_rotate_left(int a,int b){
     int rotated_part = a>>(32-b);
     return left_shift | rotated_part;
 }
-#ifndef HW1_CALCULATIONS_H
-#define HW1_CALCULATIONS_H
+
 
 #endif //HW1_CALCULATIONS_H
