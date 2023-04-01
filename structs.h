@@ -30,7 +30,7 @@ typedef struct element{
     int type;
     struct token tokens[MAX];
     int opr;
-    int value;
+    double value;
 };
 
 
@@ -43,21 +43,25 @@ typedef struct logic{
 };
 typedef struct expression{
     struct element elements[MAX];
+    struct element* p_el;
     int opr;
-    struct logic *l1;
-    struct logic *l2;
+
+    double l1_result;
+    double l2_result;
 };
 typedef struct term{
     struct element elements[MAX];
+    struct element* p_el;
     int opr;
-    struct logic *l1;
-    struct logic *l2;
+    double l1_result;
+    double l2_result;
 };
 typedef struct factor{
     struct element el;
+    struct element* p_el;
     int type;
     double value;
-    struct logic *l;
+    double l_result;
 };
 
 
